@@ -28,6 +28,18 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.may09lds.integrations:tfghh
+  packages:
+  - name: May09LDSProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.datetime:build
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2050
 configurationVariables:
   ? artConnection.May09LDSProject.project.may09lds.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
   : "1521"
