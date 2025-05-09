@@ -11,11 +11,18 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: WmSAP
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
 - serviceName: project.may09lds.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: May09LDSProject
     version: "1.0"
+  - name: WmSAP
+    version: 10.1.0.0.1013
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -24,6 +31,22 @@ services:
   packages:
   - name: May09LDSProject
     version: "1.0"
+  - name: WmSAP
+    version: 10.1.0.0.1013
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.may09lds.integrations:tesrtf
+  packages:
+  - name: May09LDSProject
+    version: "1.0"
+  - name: WmSAP
+    version: 10.1.0.0.1013
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
@@ -32,6 +55,10 @@ services:
   packages:
   - name: May09LDSProject
     version: "1.0"
+  - name: WmSAP
+    version: 10.1.0.0.1013
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
